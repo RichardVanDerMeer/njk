@@ -50,7 +50,7 @@ const opts = {
   templates,
   out: cli.out,
   watch: cli.watch,
-  minify: !cli.watch,
+  minify: !cli.watch || true,
   minifyOpts: {
     collapseBooleanAttributes: true,
     collapseWhitespace: true,
